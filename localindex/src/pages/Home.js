@@ -27,7 +27,20 @@ export default function Home() {
     //   map.setCenter([parseFloat(mapLongitude), parseFloat(mapLatitude)]);
     //   map.setZoom(mapZoom);
     // };
-  
+    const addMarker = () => {
+        const targetCoordinates = [mapLongitude, mapLatitude];
+        const marker = new tt.Marker().setLngLat(targetCoordinates).addTo(map);
+        const popup = new tt.Popup({ offset: popupOffsets }).setHTML("Custom Marker");
+        marker.setPopup(popup)
+      };
+      
+      var popupOffsets = {
+        top: [0, 0],
+        bottom: [0, -50],
+        left: [25, -35],
+        right: [-25, -35]
+      };
+    
     useEffect(() => {
       let map = tt.map({
          key: "o8Cegu3yE9Qc7ZxskgAocGJluAfPXAbj",
@@ -44,7 +57,31 @@ export default function Home() {
       <h1>Local Shortcut</h1>
         <p> Find local shortcuts. Somewhere you cannot find on google maps. hover over pin to learn more.</p>
             <div ref={mapElement} className="mapDiv map" />
+       <input
+             type="text"
+          name="latitude"
+           placeholder="latitude"
+          value={mapLatitude}
+           onChange={(e) => setMapLatitude(e.target.value)}
+           class="latitudebox"
+         />
+
+       <b class="longitudetext">Please enter longitude</b>
+
+        <input
+         type="text"
+       name="longitude"
+           placeholder="longitude"
+           value={mapLongitude}
+          onChange={(e) => setMapLongitude(e.target.value)}
+          class="longitudebox"
+        />
+
+            <button onClick={addMarker}>
+            Add Marker
+          </button>
             <div class="pin"></div>
+            
         <div class="modal">
             <h2>Queen street Shortcut</h2>
             <p>Walk through the main entrance and take the small lift to the level 5. This will take you to the adjacent street quickly.</p>
