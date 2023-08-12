@@ -1,6 +1,7 @@
-import React from 'react'
-import Pins from '../Components/pins';
-import Map from '../Components/map'
+import * as React from "react";
+import { useState, useEffect, useRef } from "react";
+import '@tomtom-international/web-sdk-maps/dist/maps.css'
+import tt from "@tomtom-international/web-sdk-maps"
 
 //const MAX_ZOOM = 17;
 export default function Home() {
@@ -55,11 +56,32 @@ export default function Home() {
     <div class="map-container">        
       <h1>Local Shortcut</h1>
         <p> Find local shortcuts. Somewhere you cannot find on google maps. hover over pin to learn more.</p>
-        <>
-          {/* <Pins /> */}
-          <Map />
-        </>
-        <img src="./assets/pin.svg" class="pin" />
+            <div ref={mapElement} className="mapDiv map" />
+       <input
+             type="text"
+          name="latitude"
+           placeholder="latitude"
+          value={mapLatitude}
+           onChange={(e) => setMapLatitude(e.target.value)}
+           class="latitudebox"
+         />
+
+       <b class="longitudetext">Please enter longitude</b>
+
+        <input
+         type="text"
+       name="longitude"
+           placeholder="longitude"
+           value={mapLongitude}
+          onChange={(e) => setMapLongitude(e.target.value)}
+          class="longitudebox"
+        />
+
+            <button onClick={addMarker}>
+            Add Marker
+          </button>
+            <div class="pin"></div>
+            
         <div class="modal">
             <h2>Queen street Shortcut</h2>
             <p>Walk through the main entrance and take the small lift to the level 5. This will take you to the adjacent street quickly.</p>
