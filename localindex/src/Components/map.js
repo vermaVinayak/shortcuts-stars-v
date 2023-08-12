@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect, useRef } from "react";
 import tt from "@tomtom-international/web-sdk-maps";
+import { pins } from './pins';
 
 export default function Map() {
     const MAX_ZOOM = 20;
@@ -29,13 +30,23 @@ export default function Map() {
         map.setZoom(mapZoom);
       };
       
-      const addMarker = () => {
-        const targetCoordinates = [mapLongitude, mapLatitude];
+      const addMarker = (pin) => {
+        const targetCoordinates = [pin.longitude, pin.latitude];
         const marker = new tt.Marker().setLngLat(targetCoordinates).addTo(map);
-        const popup = new tt.Popup({ offset: popupOffsets }).setHTML("Custom Marker");
+        const popup = new tt.Popup({ offset: popupOffsets }).setHTML(`<h3>${pin.title}</h3><p>${pin.description}</p>`);
         marker.setPopup(popup)
       };
       
+      function addMarkers () {
+        pins.forEach(pin => {
+          // const marker = new tt.Marker().setLngLat([pin.longitude, pin.latitude]).addTo(map);
+          // const popup = new tt.Popup().setHTML(`<h3>${pin.title}</h3><p>${pin.description}</p>`);
+          // marker.setPopup(popup);
+          addMarker(pin)
+        });
+        console.log(pins)
+      }
+
       var popupOffsets = {
         top: [0, 0],
         bottom: [0, -50],
@@ -59,6 +70,7 @@ export default function Map() {
           zoom: mapZoom,
         });
         setMap(map);
+        // addMarkers();
         return () => map.remove();
       }, []);
     
@@ -100,7 +112,7 @@ export default function Map() {
             <button onClick={updateMap}>
                 Update Map
               </button>
-              <button onClick={addMarker}>
+              <button onClick={addMarkers}>
                 Add Marker
               </button>
             </div>
