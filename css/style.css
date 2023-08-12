@@ -1,0 +1,24 @@
+body {
+margin: 0;
+font-size:16px;
+
+}
+.main {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem;
+}
+.map {
+    width: 100%;
+}
+.map-container {
+    position: relative;
+}
+.pin {
+    position:absolute;
+    top : 15rem;
+    left: 10rem;
+    width: 2.5rem;
+    height: 2.5rem;
+
+}
