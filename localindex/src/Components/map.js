@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect, useRef } from "react";
 import tt from "@tomtom-international/web-sdk-maps";
+import { pins } from './pins';
 
 export default function Map() {
     const MAX_ZOOM = 20;
@@ -36,6 +37,14 @@ export default function Map() {
         marker.setPopup(popup)
       };
       
+      function addMarkers () {
+        pins.pushforEach(pin => {
+          const marker = new tt.Marker().setLngLat([pin.longitude, pin.latitude]).addTo(map);
+          const popup = new tt.Popup().setHTML(`<h3>${pin.title}</h3><p>${pin.description}</p>`);
+          marker.setPopup(popup);
+        });
+      }
+
       var popupOffsets = {
         top: [0, 0],
         bottom: [0, -50],
@@ -59,6 +68,7 @@ export default function Map() {
           zoom: mapZoom,
         });
         setMap(map);
+        addMarkers();
         return () => map.remove();
       }, []);
     
