@@ -5,13 +5,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <script src='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps-web.min.js'></script>
     </head>
     <body >
+        <div class="map-container"> 
         <section class="main">
         <h1>Local Shortcut</h1>
         <p> Find local shortcuts. Somewhere you cannot find on google maps. hover over pin to learn more.</p>
-       
-       <div class="map-container"> <img src="./assets/map.png" class="map"/>
+        <div id='map' class='map'></div>    
+        <!--<img src="./assets/map.png" class="map"/>-->
         <img src="./assets/pin.svg" class="pin" />
         <div class="modal">
             <h2>Queen street Shortcut</h2>
