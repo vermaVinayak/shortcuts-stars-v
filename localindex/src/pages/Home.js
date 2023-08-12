@@ -1,4 +1,6 @@
 import React from 'react'
+import Pins from '../Components/pins';
+import Map from '../Components/map'
 
 export default function Home() {
   return (
@@ -7,7 +9,10 @@ export default function Home() {
         <section class="main">
         <h1>Local Shortcut</h1>
         <p> Find local shortcuts. Somewhere you cannot find on google maps. hover over pin to learn more.</p>
-        <div id='map' class='map'></div> 
+        <>
+          {/* <Pins /> */}
+          <Map />
+        </>
         <img src="./assets/pin.svg" class="pin" />
         <div class="modal">
             <h2>Queen street Shortcut</h2>
