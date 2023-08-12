@@ -1,6 +1,7 @@
 body {
 margin: 0;
 font-size:16px;
+font-family: 'roboto slab';
 
 }
 .main {
@@ -36,4 +37,8 @@ font-size:16px;
 }
  .modal:hover {
     opacity: 1;
+}
+.modal h2 {
+    margin-top: 0;
+    
 }
