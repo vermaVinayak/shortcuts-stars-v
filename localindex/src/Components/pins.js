@@ -15,9 +15,9 @@ export default function Pins() {
         // More pins here
       ];      
 
-  // return (
-  //  <Map center={[-36.8485, 174.7633]} zoom={13} pins={pins} />
-  // );
+  return (
+   <Map center={[-36.8485, 174.7633]} zoom={13} pins={pins} />
+  );
 }
 
 
