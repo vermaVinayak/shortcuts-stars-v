@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+.mapContainer {
+  margin-top: 100px;
+}
+
+.mapDiv{
+  height: 20cm;
+  width: 20cm;
+  margin-left: 50px;
+}
+
+.title{
+  margin-left: 20cm;
+  margin-top: 0.5cm;
+}
+.latitudebox{
+  margin-left: 20cm;
+  margin-top: 0.5cm;
+}
+.longitudebox{
+  margin-left: 20cm;
+  margin-top: 0.5cm;
+}
+.longitudetext{
+  margin-left: 20cm;
+  margin-top: 0.1cm;
+}
+.latitudetext{
+  margin-left: 20cm;
+  margin-top:0.5cm;
+}
+
+.buttonzoomout{
+  margin-left: 20cm;
+  margin-top: 0.5cm;
+}
+.zoomplay{
+  margin-left: 20cm;
+  margin-top: 0.1cm;
+}
