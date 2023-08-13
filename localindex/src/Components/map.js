@@ -1,9 +1,8 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import tt from "@tomtom-international/web-sdk-maps";
-import { landmarks } from "./pins";
 
-export default function Map({pins}) {
+export default function Map({ pins }) {
   const MAX_ZOOM = 20;
 
   const mapElement = useRef();
@@ -30,7 +29,6 @@ export default function Map({pins}) {
   };
 
   const addMarker = (pin) => {
-    console.log(pin.icon);
     const targetCoordinates = [pin.longitude, pin.latitude];
     const marker = new tt.Marker().setLngLat(targetCoordinates).addTo(map);
     const popup = new tt.Popup({ offset: popupOffsets }).setHTML(
@@ -40,11 +38,15 @@ export default function Map({pins}) {
     marker.setPopup(popup);
   };
 
-  function addMarkers() {
-    landmarks.forEach((pin) => {
+  function addMarkers(pins) {
+    pins.forEach((pin) => {
       addMarker(pin);
     });
   }
+
+  React.useEffect(() => {
+    addMarkers(pins);
+  }, [map]);
 
   var popupOffsets = {
     top: [0, 0],
@@ -53,15 +55,7 @@ export default function Map({pins}) {
     right: [-25, -35],
   };
 
-  // var marker = new tt.Marker()
-  //            .setLngLat([mapLongitude, mapLatitude])
-  //            .addTo(map);
-
-  // var popup = new tt.Popup({ offset: popupOffsets })
-  //     .setHTML("Custom Marker");
-  //     marker.setPopup(popup)
-
-  useEffect(() => {
+  function reloadMap() {
     let map = tt.map({
       key: "8h504Wc4AXL6OPndqhrtKf70AovVBL3V",
       container: mapElement.current,
@@ -69,16 +63,16 @@ export default function Map({pins}) {
       zoom: mapZoom,
     });
     setMap(map);
-    // addMarkers();
-    return () => map.remove();
-  }, []);
+  }
+
+  useEffect(() => {
+    reloadMap();
+  }, [pins]);
 
   return (
     <div className="App">
       <div ref={mapElement} className="mapDiv"></div>
-
-      <b class="latitudetext">Please enter latitude</b>
-
+      {/* <b class="latitudetext">Please enter latitude</b>
       <input
         type="text"
         name="latitude"
@@ -87,9 +81,7 @@ export default function Map({pins}) {
         onChange={(e) => setMapLatitude(e.target.value)}
         class="latitudebox"
       />
-
       <b class="longitudetext">Please enter longitude</b>
-
       <input
         type="text"
         name="longitude"
@@ -97,9 +89,8 @@ export default function Map({pins}) {
         value={mapLongitude}
         onChange={(e) => setMapLongitude(e.target.value)}
         class="longitudebox"
-      />
-
-      <div className="zoomplay">
+      /> */}
+      {/* <div className="zoomplay">
         <button onClick={decreaseZoom} class="zoomout">
           -
         </button>
@@ -111,7 +102,7 @@ export default function Map({pins}) {
       <div className="zoomplay">
         <button onClick={updateMap}>Update Map</button>
         <button onClick={addMarkers}>Add Marker</button>
-      </div>
+      </div> */}
     </div>
   );
 }
