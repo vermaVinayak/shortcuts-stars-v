@@ -7,7 +7,7 @@ export default function Home({ pins }) {
   return (
     <section class="main">
       <div class="map-container">
-        <h1>Local Tips.</h1>
+        <h1>Local Tips</h1>
         <p>
           {" "}
           Find local tips. Somewhere you cannot find on google maps. Click on
