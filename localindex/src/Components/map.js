@@ -71,7 +71,11 @@ export default function Map({ pins }) {
 
   return (
     <div className="App">
-      <div ref={mapElement} className="mapDiv"></div>
+      <div
+        ref={mapElement}
+        className="mapDiv"
+        style={{ height: "80vh", width: "96vw", margin: "0" }}
+      ></div>
       {/* <b class="latitudetext">Please enter latitude</b>
       <input
         type="text"
