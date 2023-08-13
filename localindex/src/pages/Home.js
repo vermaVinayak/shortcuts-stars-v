@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import Pins from '../Components/pins';
 import Map from '../Components/map'
 
@@ -26,30 +26,30 @@ export default function Home() {
     //   map.setCenter([parseFloat(mapLongitude), parseFloat(mapLatitude)]);
     //   map.setZoom(mapZoom);
     // };
-    const addMarker = () => {
-        const targetCoordinates = [mapLongitude, mapLatitude];
-        const marker = new tt.Marker().setLngLat(targetCoordinates).addTo(map);
-        const popup = new tt.Popup({ offset: popupOffsets }).setHTML("Custom Marker");
-        marker.setPopup(popup)
-      };
+    // const addMarker = () => {
+    //     const targetCoordinates = [mapLongitude, mapLatitude];
+    //     const marker = new tt.Marker().setLngLat(targetCoordinates).addTo(map);
+    //     const popup = new tt.Popup({ offset: popupOffsets }).setHTML("Custom Marker");
+    //     marker.setPopup(popup)
+    //   };
       
-      var popupOffsets = {
-        top: [0, 0],
-        bottom: [0, -50],
-        left: [25, -35],
-        right: [-25, -35]
-      };
+    //   var popupOffsets = {
+    //     top: [0, 0],
+    //     bottom: [0, -50],
+    //     left: [25, -35],
+    //     right: [-25, -35]
+    //   };
     
-    useEffect(() => {
-      let map = tt.map({
-         key: "o8Cegu3yE9Qc7ZxskgAocGJluAfPXAbj",
-        container: mapElement.current,
-        center: [mapLongitude, mapLatitude],
-        zoom: mapZoom
-      });
-      setMap(map);
-      return () => map.remove();
-    }, []);
+    // useEffect(() => {
+    //   let map = tt.map({
+    //      key: "o8Cegu3yE9Qc7ZxskgAocGJluAfPXAbj",
+    //     container: mapElement.current,
+    //     center: [mapLongitude, mapLatitude],
+    //     zoom: mapZoom
+    //   });
+    //   setMap(map);
+    //   return () => map.remove();
+    // }, []);
   return (
     <section class="main">
     <div class="map-container">        
