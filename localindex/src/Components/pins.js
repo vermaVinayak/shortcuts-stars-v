@@ -154,3 +154,5 @@ export const places = [
     rating: "4.3",
   },
 ];
+
+export const pins = {};
