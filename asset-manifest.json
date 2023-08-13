@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/shortcuts-stars-v/static/css/main.a3569fe4.css",
-    "main.js": "/shortcuts-stars-v/static/js/main.c15b84d0.js",
-    "static/js/787.4236f720.chunk.js": "/shortcuts-stars-v/static/js/787.4236f720.chunk.js",
-    "static/media/silopark.jpg": "/shortcuts-stars-v/static/media/silopark.45643af716fc1dad3f26.jpg",
-    "static/media/asb.jpg": "/shortcuts-stars-v/static/media/asb.3e34afcdc6129b981965.jpg",
-    "static/media/aklfishmarket.jpg": "/shortcuts-stars-v/static/media/aklfishmarket.8af04e9e7273e9a82d45.jpg",
-    "static/media/toiletswq.jpg": "/shortcuts-stars-v/static/media/toiletswq.9f036ef60c4ef549fdfd.jpg",
-    "static/media/jellicoepark.jpg": "/shortcuts-stars-v/static/media/jellicoepark.77540f76759e46b0ab36.jpg",
-    "static/media/thebigwheel.jpg": "/shortcuts-stars-v/static/media/thebigwheel.91249e4630af833238f5.jpg",
-    "static/media/daddypark.jpg": "/shortcuts-stars-v/static/media/daddypark.21c3de747194201eccae.jpg",
-    "static/media/baduzzi.jpg": "/shortcuts-stars-v/static/media/baduzzi.29e0196f8c52bd1f7452.jpg",
-    "static/media/goodgeorge.jpg": "/shortcuts-stars-v/static/media/goodgeorge.d6fb0af00a732f81e1eb.jpg",
-    "static/media/northwharf.jpg": "/shortcuts-stars-v/static/media/northwharf.d1ac05ce371d14be011a.jpg",
-    "static/media/halseyst.jpg": "/shortcuts-stars-v/static/media/halseyst.2e6fa27963c1369a2910.jpg",
-    "static/media/parkhyatt.jpg": "/shortcuts-stars-v/static/media/parkhyatt.30aa6e54bd3b18bc45c8.jpg",
-    "index.html": "/shortcuts-stars-v/index.html",
-    "main.a3569fe4.css.map": "/shortcuts-stars-v/static/css/main.a3569fe4.css.map",
-    "main.c15b84d0.js.map": "/shortcuts-stars-v/static/js/main.c15b84d0.js.map",
-    "787.4236f720.chunk.js.map": "/shortcuts-stars-v/static/js/787.4236f720.chunk.js.map"
+    "main.css": "/shortcuts-stars-v/localindex/static/css/main.a3569fe4.css",
+    "main.js": "/shortcuts-stars-v/localindex/static/js/main.72a50256.js",
+    "static/js/787.4236f720.chunk.js": "/shortcuts-stars-v/localindex/static/js/787.4236f720.chunk.js",
+    "static/media/silopark.jpg": "/shortcuts-stars-v/localindex/static/media/silopark.45643af716fc1dad3f26.jpg",
+    "static/media/asb.jpg": "/shortcuts-stars-v/localindex/static/media/asb.3e34afcdc6129b981965.jpg",
+    "static/media/aklfishmarket.jpg": "/shortcuts-stars-v/localindex/static/media/aklfishmarket.8af04e9e7273e9a82d45.jpg",
+    "static/media/toiletswq.jpg": "/shortcuts-stars-v/localindex/static/media/toiletswq.9f036ef60c4ef549fdfd.jpg",
+    "static/media/jellicoepark.jpg": "/shortcuts-stars-v/localindex/static/media/jellicoepark.77540f76759e46b0ab36.jpg",
+    "static/media/thebigwheel.jpg": "/shortcuts-stars-v/localindex/static/media/thebigwheel.91249e4630af833238f5.jpg",
+    "static/media/daddypark.jpg": "/shortcuts-stars-v/localindex/static/media/daddypark.21c3de747194201eccae.jpg",
+    "static/media/baduzzi.jpg": "/shortcuts-stars-v/localindex/static/media/baduzzi.29e0196f8c52bd1f7452.jpg",
+    "static/media/goodgeorge.jpg": "/shortcuts-stars-v/localindex/static/media/goodgeorge.d6fb0af00a732f81e1eb.jpg",
+    "static/media/northwharf.jpg": "/shortcuts-stars-v/localindex/static/media/northwharf.d1ac05ce371d14be011a.jpg",
+    "static/media/halseyst.jpg": "/shortcuts-stars-v/localindex/static/media/halseyst.2e6fa27963c1369a2910.jpg",
+    "static/media/parkhyatt.jpg": "/shortcuts-stars-v/localindex/static/media/parkhyatt.30aa6e54bd3b18bc45c8.jpg",
+    "index.html": "/shortcuts-stars-v/localindex/index.html",
+    "main.a3569fe4.css.map": "/shortcuts-stars-v/localindex/static/css/main.a3569fe4.css.map",
+    "main.72a50256.js.map": "/shortcuts-stars-v/localindex/static/js/main.72a50256.js.map",
+    "787.4236f720.chunk.js.map": "/shortcuts-stars-v/localindex/static/js/787.4236f720.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3569fe4.css",
-    "static/js/main.c15b84d0.js"
+    "static/js/main.72a50256.js"
   ]
 }
