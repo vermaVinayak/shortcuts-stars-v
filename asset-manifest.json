@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shortcuts-stars-v/static/css/main.d1e6cce9.css",
-    "main.js": "/shortcuts-stars-v/static/js/main.1460a154.js",
+    "main.js": "/shortcuts-stars-v/static/js/main.947787d4.js",
     "static/js/787.4236f720.chunk.js": "/shortcuts-stars-v/static/js/787.4236f720.chunk.js",
     "static/media/silopark.jpg": "/shortcuts-stars-v/static/media/silopark.45643af716fc1dad3f26.jpg",
     "static/media/asb.jpg": "/shortcuts-stars-v/static/media/asb.3e34afcdc6129b981965.jpg",
@@ -17,11 +17,11 @@
     "static/media/parkhyatt.jpg": "/shortcuts-stars-v/static/media/parkhyatt.30aa6e54bd3b18bc45c8.jpg",
     "index.html": "/shortcuts-stars-v/index.html",
     "main.d1e6cce9.css.map": "/shortcuts-stars-v/static/css/main.d1e6cce9.css.map",
-    "main.1460a154.js.map": "/shortcuts-stars-v/static/js/main.1460a154.js.map",
+    "main.947787d4.js.map": "/shortcuts-stars-v/static/js/main.947787d4.js.map",
     "787.4236f720.chunk.js.map": "/shortcuts-stars-v/static/js/787.4236f720.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d1e6cce9.css",
-    "static/js/main.1460a154.js"
+    "static/js/main.947787d4.js"
   ]
 }
