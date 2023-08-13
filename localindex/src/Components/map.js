@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import tt from "@tomtom-international/web-sdk-maps";
 import { landmarks } from "./pins";
 
-export default function Map() {
+export default function Map({pins}) {
   const MAX_ZOOM = 20;
 
   const mapElement = useRef();

@@ -3,8 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import info_logo from '../assets/info_icon_small.png'
+import {pins} from './pins';
 
-function Header() {
+function Header({setPins}) {
     return (
         <Navbar bg="dark" data-bs-theme="dark" className="bg-body-tertiary">
             <Container>
@@ -16,8 +17,8 @@ function Header() {
                         bg="dark" 
                         data-bs-theme="dark"
                         >
-                        <NavDropdown.Item href="#action3">Construction</NavDropdown.Item>
-                        <NavDropdown.Item href="#action4">
+                        <NavDropdown.Item onClick={()=>console.log(pins)}>Construction</NavDropdown.Item>
+                        <NavDropdown.Item onClick={()=>setPins(pins)}>
                             Shortcuts
                         </NavDropdown.Item>
                         {/* <NavDropdown.Divider /> */}
